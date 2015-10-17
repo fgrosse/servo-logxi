@@ -1,8 +1,9 @@
 package logxi
 
 import (
-	"github.com/mgutz/logxi/v1"
 	"fmt"
+
+	"github.com/mgutz/logxi/v1"
 )
 
 const DefaultLevel = log.LevelWarn

@@ -1,11 +1,11 @@
 types:
     logxi.logger_provider:
-        package: github.com/fgrosse/servo/bundles/logxi
+        package: github.com/fgrosse/logxi
         type:    LoggerProvider
         configurator: [ @logxi.configurator, Configure ]
 
     logxi.configurator:
-        package: github.com/fgrosse/servo/bundles/logxi
+        package: github.com/fgrosse/logxi
         factory: NewLoggerConfigurator
         arguments:
             - "%logxi.level%"
