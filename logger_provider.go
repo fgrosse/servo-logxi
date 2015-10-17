@@ -14,7 +14,7 @@ func (p *LoggerProvider) SetLevel(level int) {
 }
 
 func (p *LoggerProvider) GetLogger(name string) servo.Logger {
-	l := log.New(name)
+	l := &loggerAdapter{Logger: log.New(name)}
 	l.SetLevel(p.DefaultLogLevel)
 
 	return l
